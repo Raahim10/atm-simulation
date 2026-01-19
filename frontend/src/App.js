@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className='title'>ATM SIMULATION SYSTEM </h1>
       {!user ? (
         showRegister ? (
           <Register setUser={setUser} setShowRegister={setShowRegister} />
@@ -19,7 +20,12 @@ function App() {
       ) : (
         <Dashboard user={user} />
       )}
+      <p className='footer'>
+        DEVELOPED BY AUR
+      </p>
     </div>
+
+
   );
 }
 
